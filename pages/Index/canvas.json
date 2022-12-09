@@ -1580,7 +1580,7 @@
                       "renderMode": "CANVAS",
                       "horizontalAlignment": "LEFT",
                       "isVisibleSearch": true,
-                      "isVisiblePagination": true,
+                      "isVisiblePagination": false,
                       "verticalAlignment": "CENTER"
                     }
                   ],
