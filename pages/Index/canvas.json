@@ -56,7 +56,7 @@
                   "widgetName": "Canvas4",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 650,
+                  "bottomRow": 660,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -114,10 +114,10 @@
                       "parentId": "bikts4y15v",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 50,
+                      "originalTopRow": 48,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 54,
+                      "originalBottomRow": 52,
                       "fontSize": "0.875rem",
                       "minDynamicHeight": 4
                     },
@@ -164,9 +164,9 @@
                       "parentId": "bikts4y15v",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 49,
+                      "originalTopRow": 47,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 53,
+                      "originalBottomRow": 51,
                       "buttonVariant": "SECONDARY"
                     },
                     {
@@ -214,10 +214,10 @@
                       "parentId": "bikts4y15v",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 45,
+                      "originalTopRow": 43,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 49,
+                      "originalBottomRow": 47,
                       "fontSize": "0.875rem",
                       "minDynamicHeight": 4
                     },
@@ -270,9 +270,9 @@
                       "parentId": "bikts4y15v",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 44,
+                      "originalTopRow": 42,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 48,
+                      "originalBottomRow": 46,
                       "buttonVariant": "SECONDARY"
                     },
                     {
@@ -325,10 +325,10 @@
                       "parentId": "bikts4y15v",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 33,
+                      "originalTopRow": 31,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 37,
+                      "originalBottomRow": 35,
                       "fontSize": "1.25rem",
                       "minDynamicHeight": 4
                     },
@@ -384,7 +384,7 @@
                       "originalTopRow": 18,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 24,
+                      "originalBottomRow": 22,
                       "fontSize": "1.25rem",
                       "minDynamicHeight": 4
                     },
@@ -537,10 +537,10 @@
                       "parentId": "bikts4y15v",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 28,
+                      "originalTopRow": 26,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 33,
+                      "originalBottomRow": 31,
                       "fontSize": "0.875rem",
                       "minDynamicHeight": 4
                     },
@@ -645,10 +645,10 @@
                       "parentId": "bikts4y15v",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 40,
+                      "originalTopRow": 38,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 44,
+                      "originalBottomRow": 42,
                       "fontSize": "0.875rem",
                       "minDynamicHeight": 4
                     },
@@ -701,9 +701,9 @@
                       "parentId": "bikts4y15v",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 39,
+                      "originalTopRow": 37,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 43,
+                      "originalBottomRow": 41,
                       "buttonVariant": "SECONDARY"
                     },
                     {
@@ -737,8 +737,8 @@
                       "parentId": "bikts4y15v",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 24,
-                      "originalBottomRow": 28
+                      "originalTopRow": 22,
+                      "originalBottomRow": 26
                     },
                     {
                       "resetFormOnClick": false,
@@ -1101,7 +1101,7 @@
                       "isVisible": true,
                       "enableClientSideSearch": true,
                       "version": 1,
-                      "totalRecordsCount": 0,
+                      "totalRecordsCount": "150",
                       "isLoading": false,
                       "childStylesheet": {
                         "button": {
@@ -1576,7 +1576,7 @@
                       "label": "Data",
                       "searchKey": "",
                       "parentId": "1rvhcesjy0",
-                      "serverSidePaginationEnabled": false,
+                      "serverSidePaginationEnabled": true,
                       "renderMode": "CANVAS",
                       "horizontalAlignment": "LEFT",
                       "isVisibleSearch": true,
