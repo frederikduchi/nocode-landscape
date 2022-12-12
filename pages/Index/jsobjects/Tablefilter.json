@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tallPlatforms: GetPlatforms.data.results,\n\tFilter: async () => {\t\n\t\tPlatforms_general.tableData = this.allPlatforms.filter(platform => platform.name.toLowerCase().includes(Platforms_general.searchText.toLowerCase()))\n\t}\n}",
+    "body": "export default {\n\tallPlatforms: GetPlatforms.data.results,\n\tFilter: () => {\t\n\t\tconsole.log(this.allPlatforms);\n\t\tconsole.log('this is a test');\n\t\tconst filtered = this.allPlatforms.filter(platform => platform.name.toLowerCase().includes(Platforms_general.searchText.toLowerCase()));\n\t\tPlatforms_general.tableData = filtered;\n\t\tconsole.log(filtered);\n\t}\n}",
     "variables": [
       {
         "name": "allPlatforms",

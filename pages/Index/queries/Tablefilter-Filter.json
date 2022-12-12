@@ -19,12 +19,12 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  Platforms_general.tableData = Tablefilter.allPlatforms.filter(platform => platform.name.toLowerCase().includes(Platforms_general.searchText.toLowerCase()));\n}",
+      "body": "() => {\n  console.log(Tablefilter.allPlatforms);\n  console.log('this is a test');\n  const filtered = Tablefilter.allPlatforms.filter(platform => platform.name.toLowerCase().includes(Platforms_general.searchText.toLowerCase()));\n  Platforms_general.tableData = filtered;\n  console.log(filtered);\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
@@ -35,9 +35,9 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  Platforms_general.tableData = Tablefilter.allPlatforms.filter(platform => platform.name.toLowerCase().includes(Platforms_general.searchText.toLowerCase()));\n}"
+      "() => {\n  console.log(Tablefilter.allPlatforms);\n  console.log('this is a test');\n  const filtered = Tablefilter.allPlatforms.filter(platform => platform.name.toLowerCase().includes(Platforms_general.searchText.toLowerCase()));\n  Platforms_general.tableData = filtered;\n  console.log(filtered);\n}"
     ],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
