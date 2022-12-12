@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "GetPlatforms",
+    "name": "GetPlatformsByName",
     "datasource": {
       "name": "Baserow API",
       "pluginId": "restapi-plugin",
@@ -16,18 +16,18 @@
     "pageId": "Index",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
-      "paginationType": "PAGE_NO",
+      "paginationType": "NONE",
       "path": "/api/database/rows/table/115206/",
       "headers": [],
       "encodeParamsToggle": true,
       "queryParameters": [
         {
-          "key": "size",
-          "value": "150"
-        },
-        {
           "key": "order_by",
           "value": "name"
+        },
+        {
+          "key": "search",
+          "value": "{{Platforms_general.searchText}}"
         }
       ],
       "bodyFormData": [],
@@ -42,18 +42,24 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "executeOnLoad": false,
+    "dynamicBindingPathList": [
+      {
+        "key": "queryParameters[1].value"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
-    "userSetOnLoad": true,
+    "jsonPathKeys": [
+      "Platforms_general.searchText"
+    ],
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Index_GetPlatforms",
+  "id": "Index_GetPlatformsByName",
   "deleted": false,
-  "gitSyncId": "6391e4da1a6c7b62d5cb9236_6391e57d6b75d66799918d8e"
+  "gitSyncId": "6391e4da1a6c7b62d5cb9236_63972fade77ccb59f68832cf"
 }
