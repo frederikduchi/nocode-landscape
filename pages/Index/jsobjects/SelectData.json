@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "SelectData",
+    "pageId": "Index",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetCategories: () => {\t\n\t\tconsole.log(Platforms_general.tableData);\n\t\treturn [...new Map(Platforms_general.tableData.map(item => [item.category[\"id\"], item.category])).values()]\n\t}\n}\n\n/*.map(item => {\n\t\t\t//item.label = item.value;\n\t\t\t//item.value = item.id\n\t\t\treturn item;\n\t\t})*/",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Index_SelectData",
+  "deleted": false,
+  "gitSyncId": "6391e4da1a6c7b62d5cb9236_639730e1038c74195c0a95e7"
+}

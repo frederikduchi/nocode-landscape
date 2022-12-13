@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "Filter",
-    "fullyQualifiedName": "Tablefilter.Filter",
+    "name": "getCategories",
+    "fullyQualifiedName": "SelectData.getCategories",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,12 +14,12 @@
       "userPermissions": []
     },
     "pageId": "Index",
-    "collectionId": "Index_Tablefilter",
+    "collectionId": "Index_SelectData",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  console.log(Tablefilter.allPlatforms);\n  console.log('this is a test');\n  const filtered = Tablefilter.allPlatforms.filter(platform => platform.name.toLowerCase().includes(Platforms_general.searchText.toLowerCase()));\n  Platforms_general.tableData = filtered;\n  console.log(filtered);\n}",
+      "body": "() => {\n  console.log(Platforms_general.tableData);\n  return [...new Map(Platforms_general.tableData.map(item => [item.category[\"id\"], item.category])).values()];\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
@@ -35,14 +35,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  console.log(Tablefilter.allPlatforms);\n  console.log('this is a test');\n  const filtered = Tablefilter.allPlatforms.filter(platform => platform.name.toLowerCase().includes(Platforms_general.searchText.toLowerCase()));\n  Platforms_general.tableData = filtered;\n  console.log(filtered);\n}"
+      "() => {\n  console.log(Platforms_general.tableData);\n  return [...new Map(Platforms_general.tableData.map(item => [item.category[\"id\"], item.category])).values()];\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Index_Tablefilter.Filter",
+  "id": "Index_SelectData.getCategories",
   "deleted": false,
   "gitSyncId": "6391e4da1a6c7b62d5cb9236_639730e1038c74195c0a95e3"
 }
