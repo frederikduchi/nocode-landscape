@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  console.log(appsmith.store);\n}",
+      "body": "() => {\n  console.log(appsmith.store.logo);\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  console.log(appsmith.store);\n}"
+      "() => {\n  console.log(appsmith.store.logo);\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

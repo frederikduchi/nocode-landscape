@@ -170,7 +170,7 @@
                               "labelPosition": "Top",
                               "key": "zyjhsiawwz",
                               "labelTextSize": "0.875rem",
-                              "onTextChanged": "{{storeValue(\"new_platform\", Object.assign({name: new_name.text}, appsmith.store.new_platform))}}",
+                              "onTextChanged": "",
                               "isDeprecated": false,
                               "rightColumn": 50,
                               "widgetId": "gdsolwnjlq",
@@ -240,7 +240,7 @@
                               "labelPosition": "Top",
                               "key": "zyjhsiawwz",
                               "labelTextSize": "0.875rem",
-                              "onTextChanged": "{{storeValue(\"new_platform\", Object.assign({website: new_website.text}, appsmith.store.new_platform))}}",
+                              "onTextChanged": "",
                               "isDeprecated": false,
                               "rightColumn": 50,
                               "widgetId": "tpv626dgmz",
@@ -259,11 +259,7 @@
                               "boxShadow": "none",
                               "widgetName": "new_logo",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "dynamicPropertyPathList": [
-                                {
-                                  "key": "onFilesSelected"
-                                }
-                              ],
+                              "dynamicPropertyPathList": [],
                               "displayName": "FilePicker",
                               "iconSVG": "/static/media/icon.7c5ad9c357928c6ff5701bf51a56c2e5.svg",
                               "searchTags": [
@@ -295,7 +291,7 @@
                               ],
                               "isDisabled": false,
                               "key": "4fchec24mz",
-                              "onFilesSelected": "{{\n\nUploadLogo.run(() => {\n\tstoreValue(\"new_platform\", Object.assign({logo: UploadLogo.data}, appsmith.store.new_platform));\n\t\n})\n\n\n}}",
+                              "onFilesSelected": "{{UploadLogo.run(() => storeValue('logo',UploadLogo.data), () => showAlert('Could not upload logo','error'))}}",
                               "isRequired": true,
                               "isDeprecated": false,
                               "rightColumn": 26,
@@ -381,7 +377,7 @@
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
                               "originalBottomRow": 35,
-                              "onOptionChange": "{{storeValue(\"new_platform\", Object.assign({category: new_category.selectedOptionValue}, appsmith.store.new_platform))}}",
+                              "onOptionChange": "",
                               "minDynamicHeight": 4
                             },
                             {
@@ -449,7 +445,7 @@
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
                               "originalBottomRow": 42,
-                              "onOptionChange": "{{storeValue(\"new_platform\", Object.assign({tags: new_tags.selectedOptionValues}, appsmith.store.new_platform))\n}}",
+                              "onOptionChange": "",
                               "minDynamicHeight": 4
                             },
                             {
@@ -516,7 +512,7 @@
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
                               "originalBottomRow": 49,
-                              "onOptionChange": "{{storeValue(\"new_platform\", Object.assign({maturity: new_maturity.selectedOptionValue}, appsmith.store.new_platform))}}",
+                              "onOptionChange": "",
                               "minDynamicHeight": 4
                             },
                             {
@@ -584,7 +580,7 @@
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
                               "originalBottomRow": 56,
-                              "onOptionChange": "{{storeValue(\"new_platform\", Object.assign({connects: new_connects.selectedOptionValues}, appsmith.store.new_platform))}}",
+                              "onOptionChange": "",
                               "minDynamicHeight": 4
                             },
                             {
@@ -625,7 +621,7 @@
                                 }
                               ],
                               "labelPosition": "Right",
-                              "onCheckChange": "{{storeValue(\"new_platform\", Object.assign({opensource: new_opensource.isChecked}, appsmith.store.new_platform))}}",
+                              "onCheckChange": "",
                               "isDisabled": false,
                               "key": "r4xtgam3te",
                               "isRequired": false,
@@ -685,7 +681,7 @@
                                 }
                               ],
                               "labelPosition": "Right",
-                              "onCheckChange": "{{storeValue(\"new_platform\", Object.assign({freeplan: new_freeplan.isChecked}, appsmith.store.new_platform))}}",
+                              "onCheckChange": "",
                               "isDisabled": false,
                               "key": "r4xtgam3te",
                               "isRequired": false,
@@ -763,7 +759,7 @@
                               "labelPosition": "Top",
                               "key": "fuvvl7u930",
                               "labelTextSize": "0.875rem",
-                              "onTextChanged": "{{storeValue(\"new_platform\", Object.assign({starter: new_starterprice.text}, appsmith.store.new_platform))}}",
+                              "onTextChanged": "",
                               "isDeprecated": false,
                               "rightColumn": 51,
                               "widgetId": "exwtqvyyuv",
