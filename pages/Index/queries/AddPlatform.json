@@ -26,7 +26,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{\n{\n    \"name\": new_name.text,\n    \"category\": new_category.selectedOptionValue,\n    \"tags\": new_tags.selectedOptionValues,\n    \"maturity\": new_maturity.selectedOptionValue,\n    \"is_open_source\": new_opensource.isChecked,\n    \"website\": new_website.text,\n\t\t\"logo\": appsmith.store.logo,\n    \"has_free_plan\": new_freeplan.isChecked,\n    \"cheapest_price\": new_starterprice.text,\n    \"connects\": new_connects.selectedOptionValues\n}\n}}",
+      "body": "{{\n{\n    \"name\": new_name.text,\n    \"category\": new_category.selectedOptionValue,\n    \"tags\": new_tags.selectedOptionValues,\n    \"maturity\": new_maturity.selectedOptionValue,\n    \"is_open_source\": new_opensource.isChecked,\n    \"website\": new_website.text,\n\t\t\"logo\": [appsmith.store.logo],\n    \"has_free_plan\": new_freeplan.isChecked,\n    \"cheapest_price\": new_starterprice.text,\n    \"connects\": new_connects.selectedOptionValues\n}\n}}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -49,7 +49,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "{\n    \"name\": new_name.text,\n    \"category\": new_category.selectedOptionValue,\n    \"tags\": new_tags.selectedOptionValues,\n    \"maturity\": new_maturity.selectedOptionValue,\n    \"is_open_source\": new_opensource.isChecked,\n    \"website\": new_website.text,\n\t\t\"logo\": appsmith.store.logo,\n    \"has_free_plan\": new_freeplan.isChecked,\n    \"cheapest_price\": new_starterprice.text,\n    \"connects\": new_connects.selectedOptionValues\n}"
+      "{\n    \"name\": new_name.text,\n    \"category\": new_category.selectedOptionValue,\n    \"tags\": new_tags.selectedOptionValues,\n    \"maturity\": new_maturity.selectedOptionValue,\n    \"is_open_source\": new_opensource.isChecked,\n    \"website\": new_website.text,\n\t\t\"logo\": [appsmith.store.logo],\n    \"has_free_plan\": new_freeplan.isChecked,\n    \"cheapest_price\": new_starterprice.text,\n    \"connects\": new_connects.selectedOptionValues\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
