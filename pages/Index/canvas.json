@@ -30,6 +30,11 @@
               "boxShadow": "none",
               "widgetName": "add_platform_modal",
               "isCanvas": true,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onClose"
+                }
+              ],
               "displayName": "Modal",
               "iconSVG": "/static/media/icon.4975978e9a961fb0bfb4e38de7ecc7c5.svg",
               "searchTags": [
@@ -46,6 +51,11 @@
               "minHeight": 750,
               "animateLoading": true,
               "parentColumnSpace": 1,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClose"
+                }
+              ],
               "leftColumn": 0,
               "dynamicBindingPathList": [
                 {
@@ -986,6 +996,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "onClose": "{{\nclearStore()\nGetPlatforms.run()\n}}",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
               "width": 358,
