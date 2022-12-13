@@ -181,7 +181,7 @@
                               "originalTopRow": 5,
                               "maxDynamicHeight": 9000,
                               "iconAlign": "left",
-                              "defaultText": "Testing platform",
+                              "defaultText": "",
                               "minDynamicHeight": 4
                             },
                             {
@@ -252,7 +252,7 @@
                               "originalTopRow": 12,
                               "maxDynamicHeight": 9000,
                               "iconAlign": "left",
-                              "defaultText": "https://www.google.be",
+                              "defaultText": "",
                               "minDynamicHeight": 4
                             },
                             {
@@ -833,7 +833,7 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "button_add",
-                              "onClick": "{{clearStore()}}",
+                              "onClick": "{{AddPlatform.run(() => showAlert('Platform was added','success'), () => showAlert('An error occured. Please try again','error'))}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "dynamicPropertyPathList": [],
                               "displayName": "Button",
