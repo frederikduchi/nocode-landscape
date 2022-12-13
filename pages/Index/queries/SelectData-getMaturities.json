@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "getCategories",
-    "fullyQualifiedName": "SelectData.getCategories",
+    "name": "getMaturities",
+    "fullyQualifiedName": "SelectData.getMaturities",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  return [...new Map(GetPlatforms.data.results.map(item => [item.category[\"id\"], item.category])).values()].map(item => {\n    const obj = Object.assign({}, item);\n    obj['label'] = item.value;\n    obj['value'] = item.id;\n    return obj;\n  });\n}",
+      "body": "() => {\n  return [...new Map(GetPlatforms.data.results.map(item => [item.maturity[\"id\"], item.maturity])).values()].map(item => {\n    const obj = Object.assign({}, item);\n    obj['label'] = item.value;\n    obj['value'] = item.id;\n    return obj;\n  });\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  return [...new Map(GetPlatforms.data.results.map(item => [item.category[\"id\"], item.category])).values()].map(item => {\n    const obj = Object.assign({}, item);\n    obj['label'] = item.value;\n    obj['value'] = item.id;\n    return obj;\n  });\n}"
+      "() => {\n  return [...new Map(GetPlatforms.data.results.map(item => [item.maturity[\"id\"], item.maturity])).values()].map(item => {\n    const obj = Object.assign({}, item);\n    obj['label'] = item.value;\n    obj['value'] = item.id;\n    return obj;\n  });\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Index_SelectData.getCategories",
+  "id": "Index_SelectData.getMaturities",
   "deleted": false,
-  "gitSyncId": "6391e4da1a6c7b62d5cb9236_63983019e77ccb59f68843c4"
+  "gitSyncId": "6391e4da1a6c7b62d5cb9236_63983f4cb5ce0e64b70ad774"
 }
