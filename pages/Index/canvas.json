@@ -3733,6 +3733,11 @@
               "widgetName": "rating_container",
               "borderColor": "#E0DEDE",
               "isCanvas": true,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
               "displayName": "Stats Box",
               "iconSVG": "/static/media/icon.382a7c7bc55323fbbd8edd79208c5324.svg",
               "topRow": 10,
@@ -3745,7 +3750,11 @@
               "parentColumnSpace": 5.0400390625,
               "dynamicTriggerPathList": [],
               "leftColumn": 47,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
               "children": [
                 {
                   "widgetName": "Canvas4Copy",
@@ -3767,6 +3776,7 @@
                       "widgetName": "add_rating_button",
                       "onClick": "{{showModal('add_rating_modal')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "dynamicPropertyPathList": [],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [
@@ -3819,6 +3829,7 @@
                       "widgetName": "read_comments_button",
                       "onClick": "",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "dynamicPropertyPathList": [],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [
@@ -4615,7 +4626,7 @@
               "rightColumn": 64,
               "dynamicHeight": "FIXED",
               "widgetId": "6b5f24a322",
-              "isVisible": true,
+              "isVisible": "{{Platforms_general.selectedRowIndex > -1}}",
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
@@ -5130,7 +5141,7 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "Button2",
-                              "onClick": "{{closeModal()}}",
+                              "onClick": "{{closeModal('add_rating_modal')}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
